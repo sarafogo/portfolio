@@ -1,5 +1,11 @@
+body {
+  background-image: url('./Images/pink-bg.png');
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

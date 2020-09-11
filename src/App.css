@@ -1,6 +1,7 @@
 body {
   background-image: url('./Images/pink-bg.png');
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .App {

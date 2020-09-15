@@ -1,3 +1,14 @@
+.n-bar{
+    color: white;
+    background-color: rgb(255, 137, 202);
+}
+.navbar-brand {
+    color: purple;
+}
+.nav-link {
+    color: purple;
+}
+
 .NavBar-content{
     display: flex;
     justify-content: space-around;

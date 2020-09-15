@@ -1,9 +1,15 @@
 import React from 'react';
 import './home.css';
 import Carousel from '../../Components/Carousel/Carousel';
-import github from '../../Images/github.svg';
-import linkedin from '../../Images/linkedin.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import github from '../../Images/github.svg';
+//import linkedin from '../../Images/linkedin.svg';
 import email from '../../Images/email.svg';
+import telefone from '../../Images/mobile.svg';
+import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 function Home() {
     return (
@@ -16,35 +22,22 @@ function Home() {
                 <h4 className='h4-class'>Desenvolvedora Front-end</h4>
                 <div className='p-div'>
                     <div className='col'>
-                        <img className='icons' src={github} />
+                        <FontAwesomeIcon className='icons' icon={faGithubAlt} />
                         <p>github.com/sarafogo</p>
                     </div>
                     <div className='col'>
-                        <img className='icons' src={linkedin} />
+                        <FontAwesomeIcon className='icons' icon={faLinkedinIn} />
                         <p>linkedIn.com/sara-fogo</p>
                     </div>
                     <div className='col'>
-                        <img className='icons' src={email} />
+                        <FontAwesomeIcon className='icons' icon={faEnvelope} />
                         <p>sarafogo.ss@gmail.com</p>
                     </div>
-                    {/* <Row className='row-content'>
-                        <Col>
-                        </Col>
-                        <Col>
-                        </Col>
-                    </Row>
-                    <Row className='row-content'>
-                        <Col>
-                        </Col>
-                        <Col>
-                        </Col>
-                    </Row>
-                    <Row className='row-content'>
-                        <Col>
-                        </Col>
-                        <Col>
-                        </Col>
-                    </Row> */}
+                    <div className='col'>
+                        <FontAwesomeIcon className='icons' icon={faMobileAlt} />
+                        <p>(81) 99518-9720</p>
+                    </div>
+                    
 
 
                 </div>

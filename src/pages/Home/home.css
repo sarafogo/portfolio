@@ -4,15 +4,17 @@
     align-content: center;
     align-items: center;
     margin-top: 25px;
+    color: papayawhip;
+    font-weight: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .carousel-div {
-    width: 50%;
-    width: 30%;
+   width: 30%;
 }
 
 img {
-    height: 500px;
+    height: 100%;
     
 }
 
@@ -20,16 +22,21 @@ img {
     text-align: center;
 
 }
+h1 {
+    background-color: rgba(248, 0, 194, 0.267);
+}
 
 .h4-class {
     line-height: 2;
     margin: 20px 0 45px 0 ;
+    padding: 0 8px 0 8px;
+    background-color: rgba(248, 0, 194, 0.267);
 }
 
 .icons {
     height: 25px;
     margin-right: 15px;
-    
+    color: papayawhip;
 }
 
 .p-div {

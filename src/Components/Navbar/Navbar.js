@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import {
   Collapse,
   Navbar,
@@ -20,41 +21,30 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <div className='n-bar'>
+      <Navbar expand="md">
         <div className='NavBar-content'>
-        <div>
-        <NavbarBrand href="/">[ Sara Fogo ]</NavbarBrand>
-        </div>
-        <div>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/projects/">Projetos</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/Habilidades">Habilidades</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Contatos
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  E-mail
-                </DropdownItem>
-                <DropdownItem>
-                  Telefone
-                </DropdownItem>
-                <DropdownItem>
-                  LinkekIn
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-        </Collapse>
-        </div>
+          <div>
+            <NavbarBrand>
+              <Link to='/' className='navbar-brand'> Sara Fogo </Link>
+            </NavbarBrand>
+          </div>
+          <div>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <Link to='/projetos' className='nav-link'>Projetos</Link>
+                </NavItem>
+                <NavItem>
+                  <Link to='/habilidades' className='nav-link'>Habilidades</Link>
+                </NavItem>
+                <NavItem>
+                  <Link to='/expeciencias' className='nav-link'>Experiências</Link>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </div>
         </div>
       </Navbar>
     </div>

@@ -1,7 +1,8 @@
 body {
-  background-image: url('./Images/pink-bg.png');
+  background-image: linear-gradient(to bottom right, rgba(245, 59, 161, 0.76), rgba(238, 130, 202, 0.753), rgba(92, 92, 240, 0.76),rgba(102, 51, 139, 0.753));
   background-repeat: no-repeat;
-  background-size: auto;
+  padding-bottom: 70px;
+
 }
 
 .App {

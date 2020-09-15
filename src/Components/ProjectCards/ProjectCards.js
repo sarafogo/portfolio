@@ -22,20 +22,24 @@ const ProjectCards = (props) => {
       <div className='card'>
         <img top className='cardImg' src={props.cardImg} alt={props.cardAlt} />
         <CardBody>
-          <CardTitle>{props.cardTitle}</CardTitle>
+          <CardTitle><b>{props.cardTitle}</b></CardTitle>
 
-          <CardText>{props.cardText}</CardText>
-          <div>
+          <CardText>{props.cardText1}</CardText>
+          <CardText><b>Foram utilizados:</b> {props.cardText2}</CardText>
+          <div className='card-btn'>
             <Button onClick={toggle}>Veja mais</Button>
           </div>
         </CardBody>
         <Modal isOpen={modal} toggle={toggle}>
           <ModalHeader toggle={toggle}>{props.modalTitle}</ModalHeader>
-          <ModalBody>{props.modalBody}</ModalBody>
+          <ModalBody>{props.modalBody1}</ModalBody>
+          <ModalBody>{props.modalBody2}</ModalBody>
+          <ModalBody>{props.modalBody3}</ModalBody>
+          <ModalBody>{props.modalBody4}</ModalBody>
           <ModalFooter>
             <Button>Ver site</Button>
             <Button onClick={toggle}>Fechar</Button>
-            </ModalFooter>
+          </ModalFooter>
         </Modal>
       </div>
     </div>

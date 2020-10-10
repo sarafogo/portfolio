@@ -1,0 +1,35 @@
+.skill-main-div{
+    color: purple;
+    margin: 45px;
+    display: flex;
+    height: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+.about-div{
+    width: 50%;
+    text-align: justify;
+    
+}
+
+.about-paragraph {
+    margin-top: 25px;
+}
+
+.habilities-div{
+    width: 50%;
+}
+
+.skills-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilities-row{
+    margin-top: 25px;
+}

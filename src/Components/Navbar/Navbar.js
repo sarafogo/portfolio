@@ -37,11 +37,11 @@ const NavBar = (props) => {
                   <Link to='/projetos' className='nav-link'>Projetos</Link>
                 </NavItem>
                 <NavItem>
-                  <Link to='/habilidades' className='nav-link'>Habilidades</Link>
+                  <Link to='/habilidades' className='nav-link'>Sobre</Link>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <Link to='/expeciencias' className='nav-link'>Experiências</Link>
-                </NavItem>
+                </NavItem> */}
               </Nav>
             </Collapse>
           </div>

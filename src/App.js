@@ -18,7 +18,7 @@ function App() {
 
           <Route exact path='/' render={() => <Home />} />
           <Route path='/projetos' render={() => <Projects />} />
-          <Route path='/habilidades' render={() => <Skills />}  /> */}
+          <Route path='/habilidades' render={() => <Skills />}  /> 
           </div>
         </Switch>
       </BrowserRouter>

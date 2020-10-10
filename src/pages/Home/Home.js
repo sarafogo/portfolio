@@ -1,14 +1,10 @@
 import React from 'react';
 import './home.css';
 import Carousel from '../../Components/Carousel/Carousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import github from '../../Images/github.svg';
-//import linkedin from '../../Images/linkedin.svg';
-import email from '../../Images/email.svg';
-import telefone from '../../Images/mobile.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
